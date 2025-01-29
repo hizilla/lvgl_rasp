@@ -101,7 +101,7 @@ lv_display_t * lv_linux_fbdev_create(void)
     LV_ASSERT_MALLOC(dsc);
     if(dsc == NULL) return NULL;
 
-    lv_display_t * disp = lv_display_create(800, 480);
+    lv_display_t * disp = lv_display_create(480, 480);
     if(disp == NULL) {
         lv_free(dsc);
         return NULL;
